@@ -24,3 +24,18 @@ export async function atualizaRepositorio(postId, name, data, id) {
     return 'Erro'
   }
 }
+
+export async function criaRepositorio(postId, name, data) {
+  try {
+    await api.post('/repos', {
+      name: name,
+      data: data,
+      postId: postId
+    })
+
+    return 'Sucesso'
+  } catch (error) {
+    console.log(error);
+    return 'Erro'
+  }
+}
