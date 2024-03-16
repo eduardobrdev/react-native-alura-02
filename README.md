@@ -65,3 +65,17 @@ Espero que você utilize ao máximo deste projeto para se aprimorar! E se quiser
 [expo]: https://docs.expo.dev/
 [rn]: https://facebook.github.io/react-native/
 [yarn]: https://yarnpkg.com/
+
+### Durante o Curso
+
+Foi necessário atualizar o expo por não usar mais a cli global, para isso foram utilizados os comandos:
+````
+npm install expo@^49.0.0
+npx expo install --fix
+````
+
+1 - Instalar o axios:
+````
+npm install axios@0.26.0
+````
+
