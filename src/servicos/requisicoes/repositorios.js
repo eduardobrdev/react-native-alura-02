@@ -39,3 +39,13 @@ export async function criaRepositorio(postId, name, data) {
     return 'Erro'
   }
 }
+
+export async function apagaRepositorio(id) {
+  try {
+    const resultado = await api.delete(`/repos/${id}`)
+    return 'Sucesso'
+  } catch (error) {
+    console.log(error);
+    return 'Erro'
+  }
+}
